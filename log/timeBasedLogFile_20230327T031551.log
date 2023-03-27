@@ -1,0 +1,3 @@
+346 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+361 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+2139 [main] INFO  JUnit.TitleTest - Actual title is: Selenium

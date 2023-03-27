@@ -1,0 +1,35 @@
+<configuration scan="true">
+    <property name="DEV_HOME" value="${user.dir}/log"/>
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <!--            <Pattern>%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) - %highlight( %msg%n)</Pattern>-->
+            <Pattern>%30(%boldBlue(%class{0})) %green(%d{yyyy-MM-dd HH:mm:ss}) %boldYellow(%marker - %msg%n)</Pattern>
+        </layout>
+    </appender>
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--                <file>${DEV_HOME}/mojPlikBezNazwy.log</file>&ndash;&gt;-->
+        <file>${DEV_HOME}/timeBasedLogFile_${bySecond}.log</file>
+        <!-- z timestamp-->
+        <!--        <file>${DEV_HOME}/timeBasedlogFile.log</file>-->
+        <!--        <append>true</append>-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${DEV_HOME}/timeBasedlogFile.%d{yyyy-MM-dd-HH-mm}.zip</fileNamePattern>
+            <maxHistory>3</maxHistory>
+            <totalSizeCap>30KB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="com.sii.tests">
+        <appender-ref ref="FILE"/>
+    </logger>
+    <logger name="org.example" level="DEBUG" />
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

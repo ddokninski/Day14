@@ -1,0 +1,581 @@
+151 [main] DEBUG configuration.EnvironmentProperty -  >>>>>>>>>>>>>>>>>> Environment name : env_int<<<<<<<<<<<<<<<<<<<<<<<<
+154 [main] DEBUG configuration.EnvironmentProperty - #### Loading property from uri file:/C:/Users/dokninski/Desktop/Szko%c5%82a%20Automatyzacji/Repo/Day14/target/classes/env_int
+155 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property env_name = int 
+155 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property eTitle = Selenium 
+155 [main] DEBUG configuration.EnvironmentProperty - ****Loading environment property appUrl = https://www.selenium.dev/ 
+156 [main] DEBUG configuration.EnvironmentProperty - #### Properties loaded from env_int : 3 
+350 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=111 in cache (valid until 03:31:34 27/03/2023 CEST)
+351 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome111=111.0.5563.64 in cache (valid until 02:31:34 28/03/2023 CEST)
+351 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+355 [main] TRACE i.g.b.wdm.cache.CacheHandler - Checking if chromedriver exists in cache
+363 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by chromedriver -- input list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe, C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe, C:\Users\dokninski\.cache\selenium\resolution.properties] -- output list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe, C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe] 
+363 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by 111.0.5563.64 -- input list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe, C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe] -- output list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe] 
+364 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by WIN -- input list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe] -- output list [C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe] 
+364 [main] DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 111.0.5563.64 found in cache
+365 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dokninski\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+434 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+438 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+438 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+441 [main] DEBUG i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3670f00
+457 [main] DEBUG i.n.u.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+457 [main] DEBUG i.n.u.internal.PlatformDependent0 - Java version: 17
+458 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+458 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+459 [main] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+459 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Buffer.address: available
+459 [main] DEBUG i.n.u.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:282)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at configuration.BrowserEnvironment.getDriver(BrowserEnvironment.java:43)
+	at JUnit.BaseTest.setup(BaseTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:411)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:409)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:84)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+461 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+462 [main] DEBUG i.n.u.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @72d818d1
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at configuration.BrowserEnvironment.getDriver(BrowserEnvironment.java:43)
+	at JUnit.BaseTest.setup(BaseTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:411)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:409)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:84)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+463 [main] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+463 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+467 [main] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 12809404416 bytes (maybe)
+468 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\DOKNIN~1\AppData\Local\Temp (java.io.tmpdir)
+468 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+468 [main] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+469 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+469 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+470 [main] DEBUG i.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+470 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+475 [main] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+488 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+488 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+515 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+515 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+534 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 40
+540 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+540 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+545 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7e31ce0f
+547 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6813a331
+547 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1bd81830
+548 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@39ab59f8
+549 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@64e92d61
+549 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@111610e6
+550 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4ad4936c
+551 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@29d37757
+551 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4fcc529
+552 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@25cc7470
+553 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4beddc56
+554 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@79b663b3
+554 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1b812421
+555 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5d28bcd5
+555 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7882c44a
+556 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@32639b12
+557 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@20d11153
+558 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3887cf88
+558 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5649ec46
+560 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@78dc4696
+560 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@502f8b57
+561 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5652f555
+562 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4fe01805
+562 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@55120f99
+563 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@794b435f
+564 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@38f2e97e
+564 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@779dfe55
+565 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@323659f8
+566 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1144a55a
+566 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3e521715
+567 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@26a529dc
+568 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@265c5d69
+568 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1286528d
+569 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3cc20577
+570 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@33a630fa
+571 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@775594f2
+572 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5767b2af
+572 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7b22ec89
+573 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@790132f7
+574 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2228db21
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 40
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 40
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+589 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+590 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+590 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+590 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+599 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+599 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+599 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+815 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 12352 (auto-detected)
+816 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+816 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+820 [Forwarding newSession on session null to remote] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+820 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+829 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 74:04:f1:ff:fe:45:0f:60 (auto-detected)
+856 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+856 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+856 [AsyncHttpClient-1-2] DEBUG i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6ebead51
+864 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22] REGISTERED
+864 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22] CONNECT: localhost/127.0.0.1:19307
+866 [AsyncHttpClient-1-2] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307]' for 'POST' to '/session'
+871 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+871 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+871 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+871 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+876 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] WRITE: 173B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 73 65 73 73 69 6f 6e 20 48 54 |POST /session HT|
+|00000010| 54 50 2f 31 2e 31 0d 0a 55 73 65 72 2d 41 67 65 |TP/1.1..User-Age|
+|00000020| 6e 74 3a 20 73 65 6c 65 6e 69 75 6d 2f 34 2e 38 |nt: selenium/4.8|
+|00000030| 2e 31 20 28 6a 61 76 61 20 77 69 6e 64 6f 77 73 |.1 (java windows|
+|00000040| 29 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 |)..Content-Lengt|
+|00000050| 68 3a 20 34 32 31 0d 0a 43 6f 6e 74 65 6e 74 2d |h: 421..Content-|
+|00000060| 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f |Type: applicatio|
+|00000070| 6e 2f 6a 73 6f 6e 3b 20 63 68 61 72 73 65 74 3d |n/json; charset=|
+|00000080| 75 74 66 2d 38 0d 0a 68 6f 73 74 3a 20 6c 6f 63 |utf-8..host: loc|
+|00000090| 61 6c 68 6f 73 74 3a 31 39 33 30 37 0d 0a 61 63 |alhost:19307..ac|
+|000000a0| 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a          |cept: */*....   |
++--------+-------------------------------------------------+----------------+
+880 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] WRITE: 421B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 7b 0a 20 20 22 64 65 73 69 72 65 64 43 61 70 61 |{.  "desiredCapa|
+|00000010| 62 69 6c 69 74 69 65 73 22 3a 20 7b 0a 20 20 20 |bilities": {.   |
+|00000020| 20 22 62 72 6f 77 73 65 72 4e 61 6d 65 22 3a 20 | "browserName": |
+|00000030| 22 63 68 72 6f 6d 65 22 2c 0a 20 20 20 20 22 67 |"chrome",.    "g|
+|00000040| 6f 6f 67 3a 63 68 72 6f 6d 65 4f 70 74 69 6f 6e |oog:chromeOption|
+|00000050| 73 22 3a 20 7b 0a 20 20 20 20 20 20 22 61 72 67 |s": {.      "arg|
+|00000060| 73 22 3a 20 5b 0a 20 20 20 20 20 20 20 20 22 73 |s": [.        "s|
+|00000070| 74 61 72 74 2d 6d 61 78 69 6d 69 7a 65 64 22 0a |tart-maximized".|
+|00000080| 20 20 20 20 20 20 5d 2c 0a 20 20 20 20 20 20 22 |      ],.      "|
+|00000090| 65 78 74 65 6e 73 69 6f 6e 73 22 3a 20 5b 0a 20 |extensions": [. |
+|000000a0| 20 20 20 20 20 5d 0a 20 20 20 20 7d 0a 20 20 7d |     ].    }.  }|
+|000000b0| 2c 0a 20 20 22 63 61 70 61 62 69 6c 69 74 69 65 |,.  "capabilitie|
+|000000c0| 73 22 3a 20 7b 0a 20 20 20 20 22 66 69 72 73 74 |s": {.    "first|
+|000000d0| 4d 61 74 63 68 22 3a 20 5b 0a 20 20 20 20 20 20 |Match": [.      |
+|000000e0| 7b 0a 20 20 20 20 20 20 20 20 22 62 72 6f 77 73 |{.        "brows|
+|000000f0| 65 72 4e 61 6d 65 22 3a 20 22 63 68 72 6f 6d 65 |erName": "chrome|
+|00000100| 22 2c 0a 20 20 20 20 20 20 20 20 22 67 6f 6f 67 |",.        "goog|
+|00000110| 3a 63 68 72 6f 6d 65 4f 70 74 69 6f 6e 73 22 3a |:chromeOptions":|
+|00000120| 20 7b 0a 20 20 20 20 20 20 20 20 20 20 22 61 72 | {.          "ar|
+|00000130| 67 73 22 3a 20 5b 0a 20 20 20 20 20 20 20 20 20 |gs": [.         |
+|00000140| 20 20 20 22 73 74 61 72 74 2d 6d 61 78 69 6d 69 |   "start-maximi|
+|00000150| 7a 65 64 22 0a 20 20 20 20 20 20 20 20 20 20 5d |zed".          ]|
+|00000160| 2c 0a 20 20 20 20 20 20 20 20 20 20 22 65 78 74 |,.          "ext|
+|00000170| 65 6e 73 69 6f 6e 73 22 3a 20 5b 0a 20 20 20 20 |ensions": [.    |
+|00000180| 20 20 20 20 20 20 5d 0a 20 20 20 20 20 20 20 20 |      ].        |
+|00000190| 7d 0a 20 20 20 20 20 20 7d 0a 20 20 20 20 5d 0a |}.      }.    ].|
+|000001a0| 20 20 7d 0a 7d                                  |  }.}           |
++--------+-------------------------------------------------+----------------+
+880 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] FLUSH
+882 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] WRITE: 0B
+882 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] FLUSH
+882 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] ACTIVE
+1355 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] READ: 971B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a |.Content-Length:|
+|00000020| 38 36 32 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 |862..Content-Typ|
+|00000030| 65 3a 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 |e:application/js|
+|00000040| 6f 6e 3b 20 63 68 61 72 73 65 74 3d 75 74 66 2d |on; charset=utf-|
+|00000050| 38 0d 0a 63 61 63 68 65 2d 63 6f 6e 74 72 6f 6c |8..cache-control|
+|00000060| 3a 6e 6f 2d 63 61 63 68 65 0d 0a 0d 0a 7b 22 76 |:no-cache....{"v|
+|00000070| 61 6c 75 65 22 3a 7b 22 63 61 70 61 62 69 6c 69 |alue":{"capabili|
+|00000080| 74 69 65 73 22 3a 7b 22 61 63 63 65 70 74 49 6e |ties":{"acceptIn|
+|00000090| 73 65 63 75 72 65 43 65 72 74 73 22 3a 66 61 6c |secureCerts":fal|
+|000000a0| 73 65 2c 22 62 72 6f 77 73 65 72 4e 61 6d 65 22 |se,"browserName"|
+|000000b0| 3a 22 63 68 72 6f 6d 65 22 2c 22 62 72 6f 77 73 |:"chrome","brows|
+|000000c0| 65 72 56 65 72 73 69 6f 6e 22 3a 22 31 31 31 2e |erVersion":"111.|
+|000000d0| 30 2e 35 35 36 33 2e 31 31 31 22 2c 22 63 68 72 |0.5563.111","chr|
+|000000e0| 6f 6d 65 22 3a 7b 22 63 68 72 6f 6d 65 64 72 69 |ome":{"chromedri|
+|000000f0| 76 65 72 56 65 72 73 69 6f 6e 22 3a 22 31 31 31 |verVersion":"111|
+|00000100| 2e 30 2e 35 35 36 33 2e 36 34 20 28 63 37 31 30 |.0.5563.64 (c710|
+|00000110| 65 39 33 64 35 62 36 33 62 37 30 39 35 61 66 65 |e93d5b63b7095afe|
+|00000120| 38 63 32 63 31 37 64 66 33 34 34 30 38 30 37 38 |8c2c17df34408078|
+|00000130| 34 33 39 64 2d 72 65 66 73 2f 62 72 61 6e 63 68 |439d-refs/branch|
+|00000140| 2d 68 65 61 64 73 2f 35 35 36 33 40 7b 23 39 39 |-heads/5563@{#99|
+|00000150| 35 7d 29 22 2c 22 75 73 65 72 44 61 74 61 44 69 |5})","userDataDi|
+|00000160| 72 22 3a 22 43 3a 5c 5c 55 73 65 72 73 5c 5c 44 |r":"C:\\Users\\D|
+|00000170| 4f 4b 4e 49 4e 7e 31 5c 5c 41 70 70 44 61 74 61 |OKNIN~1\\AppData|
+|00000180| 5c 5c 4c 6f 63 61 6c 5c 5c 54 65 6d 70 5c 5c 73 |\\Local\\Temp\\s|
+|00000190| 63 6f 70 65 64 5f 64 69 72 38 38 30 30 5f 31 35 |coped_dir8800_15|
+|000001a0| 36 34 37 35 38 37 31 37 22 7d 2c 22 67 6f 6f 67 |64758717"},"goog|
+|000001b0| 3a 63 68 72 6f 6d 65 4f 70 74 69 6f 6e 73 22 3a |:chromeOptions":|
+|000001c0| 7b 22 64 65 62 75 67 67 65 72 41 64 64 72 65 73 |{"debuggerAddres|
+|000001d0| 73 22 3a 22 6c 6f 63 61 6c 68 6f 73 74 3a 35 32 |s":"localhost:52|
+|000001e0| 39 37 31 22 7d 2c 22 6e 65 74 77 6f 72 6b 43 6f |971"},"networkCo|
+|000001f0| 6e 6e 65 63 74 69 6f 6e 45 6e 61 62 6c 65 64 22 |nnectionEnabled"|
+|00000200| 3a 66 61 6c 73 65 2c 22 70 61 67 65 4c 6f 61 64 |:false,"pageLoad|
+|00000210| 53 74 72 61 74 65 67 79 22 3a 22 6e 6f 72 6d 61 |Strategy":"norma|
+|00000220| 6c 22 2c 22 70 6c 61 74 66 6f 72 6d 4e 61 6d 65 |l","platformName|
+|00000230| 22 3a 22 77 69 6e 64 6f 77 73 22 2c 22 70 72 6f |":"windows","pro|
+|00000240| 78 79 22 3a 7b 7d 2c 22 73 65 74 57 69 6e 64 6f |xy":{},"setWindo|
+|00000250| 77 52 65 63 74 22 3a 74 72 75 65 2c 22 73 74 72 |wRect":true,"str|
+|00000260| 69 63 74 46 69 6c 65 49 6e 74 65 72 61 63 74 61 |ictFileInteracta|
+|00000270| 62 69 6c 69 74 79 22 3a 66 61 6c 73 65 2c 22 74 |bility":false,"t|
+|00000280| 69 6d 65 6f 75 74 73 22 3a 7b 22 69 6d 70 6c 69 |imeouts":{"impli|
+|00000290| 63 69 74 22 3a 30 2c 22 70 61 67 65 4c 6f 61 64 |cit":0,"pageLoad|
+|000002a0| 22 3a 33 30 30 30 30 30 2c 22 73 63 72 69 70 74 |":300000,"script|
+|000002b0| 22 3a 33 30 30 30 30 7d 2c 22 75 6e 68 61 6e 64 |":30000},"unhand|
+|000002c0| 6c 65 64 50 72 6f 6d 70 74 42 65 68 61 76 69 6f |ledPromptBehavio|
+|000002d0| 72 22 3a 22 64 69 73 6d 69 73 73 20 61 6e 64 20 |r":"dismiss and |
+|000002e0| 6e 6f 74 69 66 79 22 2c 22 77 65 62 61 75 74 68 |notify","webauth|
+|000002f0| 6e 3a 65 78 74 65 6e 73 69 6f 6e 3a 63 72 65 64 |n:extension:cred|
+|00000300| 42 6c 6f 62 22 3a 74 72 75 65 2c 22 77 65 62 61 |Blob":true,"weba|
+|00000310| 75 74 68 6e 3a 65 78 74 65 6e 73 69 6f 6e 3a 6c |uthn:extension:l|
+|00000320| 61 72 67 65 42 6c 6f 62 22 3a 74 72 75 65 2c 22 |argeBlob":true,"|
+|00000330| 77 65 62 61 75 74 68 6e 3a 65 78 74 65 6e 73 69 |webauthn:extensi|
+|00000340| 6f 6e 3a 6d 69 6e 50 69 6e 4c 65 6e 67 74 68 22 |on:minPinLength"|
+|00000350| 3a 74 72 75 65 2c 22 77 65 62 61 75 74 68 6e 3a |:true,"webauthn:|
+|00000360| 65 78 74 65 6e 73 69 6f 6e 3a 70 72 66 22 3a 74 |extension:prf":t|
+|00000370| 72 75 65 2c 22 77 65 62 61 75 74 68 6e 3a 76 69 |rue,"webauthn:vi|
+|00000380| 72 74 75 61 6c 41 75 74 68 65 6e 74 69 63 61 74 |rtualAuthenticat|
+|00000390| 6f 72 73 22 3a 74 72 75 65 7d 2c 22 73 65 73 73 |ors":true},"sess|
+|000003a0| 69 6f 6e 49 64 22 3a 22 33 34 62 31 62 37 37 65 |ionId":"34b1b77e|
+|000003b0| 62 34 62 65 38 30 66 38 33 36 34 66 33 30 30 64 |b4be80f8364f300d|
+|000003c0| 30 36 63 64 61 63 32 38 22 7d 7d                |06cdac28"}}     |
++--------+-------------------------------------------------+----------------+
+1359 [AsyncHttpClient-1-2] DEBUG i.n.h.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+1359 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.8.1 (java windows)
+Content-Length: 421
+Content-Type: application/json; charset=utf-8
+host: localhost:19307
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 862
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+1363 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:19307 for channel [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307]
+1365 [AsyncHttpClient-1-2] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9d58de22, L:/127.0.0.1:52970 - R:localhost/127.0.0.1:19307] READ COMPLETE
+1407 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1] REGISTERED
+1407 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1] CONNECT: localhost/127.0.0.1:52971
+1407 [AsyncHttpClient-1-3] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971]' for 'GET' to '/json/version'
+1408 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971] WRITE: 109B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 6a 73 6f 6e 2f 76 65 72 73 69 6f |GET /json/versio|
+|00000010| 6e 20 48 54 54 50 2f 31 2e 31 0d 0a 55 73 65 72 |n HTTP/1.1..User|
+|00000020| 2d 41 67 65 6e 74 3a 20 73 65 6c 65 6e 69 75 6d |-Agent: selenium|
+|00000030| 2f 34 2e 38 2e 31 20 28 6a 61 76 61 20 77 69 6e |/4.8.1 (java win|
+|00000040| 64 6f 77 73 29 0d 0a 68 6f 73 74 3a 20 6c 6f 63 |dows)..host: loc|
+|00000050| 61 6c 68 6f 73 74 3a 35 32 39 37 31 0d 0a 61 63 |alhost:52971..ac|
+|00000060| 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a          |cept: */*....   |
++--------+-------------------------------------------------+----------------+
+1409 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971] FLUSH
+1409 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971] ACTIVE
+1410 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971] READ: 557B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 43 6f 6e 74 65 6e 74 2d 53 65 63 75 72 69 74 |.Content-Securit|
+|00000020| 79 2d 50 6f 6c 69 63 79 3a 66 72 61 6d 65 2d 61 |y-Policy:frame-a|
+|00000030| 6e 63 65 73 74 6f 72 73 20 27 6e 6f 6e 65 27 0d |ncestors 'none'.|
+|00000040| 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a |.Content-Length:|
+|00000050| 34 32 34 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 |424..Content-Typ|
+|00000060| 65 3a 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 |e:application/js|
+|00000070| 6f 6e 3b 20 63 68 61 72 73 65 74 3d 55 54 46 2d |on; charset=UTF-|
+|00000080| 38 0d 0a 0d 0a 7b 0d 0a 20 20 20 22 42 72 6f 77 |8....{..   "Brow|
+|00000090| 73 65 72 22 3a 20 22 43 68 72 6f 6d 65 2f 31 31 |ser": "Chrome/11|
+|000000a0| 31 2e 30 2e 35 35 36 33 2e 31 31 31 22 2c 0d 0a |1.0.5563.111",..|
+|000000b0| 20 20 20 22 50 72 6f 74 6f 63 6f 6c 2d 56 65 72 |   "Protocol-Ver|
+|000000c0| 73 69 6f 6e 22 3a 20 22 31 2e 33 22 2c 0d 0a 20 |sion": "1.3",.. |
+|000000d0| 20 20 22 55 73 65 72 2d 41 67 65 6e 74 22 3a 20 |  "User-Agent": |
+|000000e0| 22 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 57 69 |"Mozilla/5.0 (Wi|
+|000000f0| 6e 64 6f 77 73 20 4e 54 20 31 30 2e 30 3b 20 57 |ndows NT 10.0; W|
+|00000100| 69 6e 36 34 3b 20 78 36 34 29 20 41 70 70 6c 65 |in64; x64) Apple|
+|00000110| 57 65 62 4b 69 74 2f 35 33 37 2e 33 36 20 28 4b |WebKit/537.36 (K|
+|00000120| 48 54 4d 4c 2c 20 6c 69 6b 65 20 47 65 63 6b 6f |HTML, like Gecko|
+|00000130| 29 20 43 68 72 6f 6d 65 2f 31 31 31 2e 30 2e 30 |) Chrome/111.0.0|
+|00000140| 2e 30 20 53 61 66 61 72 69 2f 35 33 37 2e 33 36 |.0 Safari/537.36|
+|00000150| 22 2c 0d 0a 20 20 20 22 56 38 2d 56 65 72 73 69 |",..   "V8-Versi|
+|00000160| 6f 6e 22 3a 20 22 31 31 2e 31 2e 32 37 37 2e 31 |on": "11.1.277.1|
+|00000170| 37 22 2c 0d 0a 20 20 20 22 57 65 62 4b 69 74 2d |7",..   "WebKit-|
+|00000180| 56 65 72 73 69 6f 6e 22 3a 20 22 35 33 37 2e 33 |Version": "537.3|
+|00000190| 36 20 28 40 33 64 61 33 37 35 63 39 65 39 65 35 |6 (@3da375c9e9e5|
+|000001a0| 61 64 39 62 35 35 36 61 66 35 64 66 37 30 38 61 |ad9b556af5df708a|
+|000001b0| 36 65 36 63 30 31 64 38 63 66 62 31 29 22 2c 0d |6e6c01d8cfb1)",.|
+|000001c0| 0a 20 20 20 22 77 65 62 53 6f 63 6b 65 74 44 65 |.   "webSocketDe|
+|000001d0| 62 75 67 67 65 72 55 72 6c 22 3a 20 22 77 73 3a |buggerUrl": "ws:|
+|000001e0| 2f 2f 6c 6f 63 61 6c 68 6f 73 74 3a 35 32 39 37 |//localhost:5297|
+|000001f0| 31 2f 64 65 76 74 6f 6f 6c 73 2f 62 72 6f 77 73 |1/devtools/brows|
+|00000200| 65 72 2f 64 63 32 31 38 62 38 32 2d 64 63 30 63 |er/dc218b82-dc0c|
+|00000210| 2d 34 63 36 38 2d 39 37 34 32 2d 65 34 65 66 34 |-4c68-9742-e4ef4|
+|00000220| 30 36 30 65 35 37 65 22 0d 0a 7d 0d 0a          |060e57e"..}..   |
++--------+-------------------------------------------------+----------------+
+1410 [AsyncHttpClient-1-3] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.8.1 (java windows)
+host: localhost:52971
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Security-Policy: frame-ancestors 'none'
+Content-Length: 424
+Content-Type: application/json; charset=UTF-8
+
+1411 [AsyncHttpClient-1-3] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:52971 for channel [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971]
+1411 [AsyncHttpClient-1-3] TRACE i.n.handler.logging.LoggingHandler - [id: 0x9040e2c1, L:/127.0.0.1:52977 - R:localhost/127.0.0.1:52971] READ COMPLETE
+1415 [main] DEBUG i.n.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x39ba738f131c110f
+1416 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a] REGISTERED
+1416 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a] CONNECT: localhost/127.0.0.1:52971
+1416 [AsyncHttpClient-1-4] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971]' for 'GET' to '/devtools/browser/dc218b82-dc0c-4c68-9742-e4ef4060e57e'
+1417 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] WRITE: 273B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 45 54 20 2f 64 65 76 74 6f 6f 6c 73 2f 62 72 |GET /devtools/br|
+|00000010| 6f 77 73 65 72 2f 64 63 32 31 38 62 38 32 2d 64 |owser/dc218b82-d|
+|00000020| 63 30 63 2d 34 63 36 38 2d 39 37 34 32 2d 65 34 |c0c-4c68-9742-e4|
+|00000030| 65 66 34 30 36 30 65 35 37 65 20 48 54 54 50 2f |ef4060e57e HTTP/|
+|00000040| 31 2e 31 0d 0a 75 70 67 72 61 64 65 3a 20 77 65 |1.1..upgrade: we|
+|00000050| 62 73 6f 63 6b 65 74 0d 0a 63 6f 6e 6e 65 63 74 |bsocket..connect|
+|00000060| 69 6f 6e 3a 20 75 70 67 72 61 64 65 0d 0a 73 65 |ion: upgrade..se|
+|00000070| 63 2d 77 65 62 73 6f 63 6b 65 74 2d 6b 65 79 3a |c-websocket-key:|
+|00000080| 20 7a 6c 49 6d 43 42 32 50 50 79 70 54 6f 4d 31 | zlImCB2PPypToM1|
+|00000090| 49 57 4d 63 31 65 77 3d 3d 0d 0a 73 65 63 2d 77 |IWMc1ew==..sec-w|
+|000000a0| 65 62 73 6f 63 6b 65 74 2d 76 65 72 73 69 6f 6e |ebsocket-version|
+|000000b0| 3a 20 31 33 0d 0a 6f 72 69 67 69 6e 3a 20 68 74 |: 13..origin: ht|
+|000000c0| 74 70 3a 2f 2f 6c 6f 63 61 6c 68 6f 73 74 3a 35 |tp://localhost:5|
+|000000d0| 32 39 37 31 0d 0a 68 6f 73 74 3a 20 6c 6f 63 61 |2971..host: loca|
+|000000e0| 6c 68 6f 73 74 3a 35 32 39 37 31 0d 0a 61 63 63 |lhost:52971..acc|
+|000000f0| 65 70 74 3a 20 2a 2f 2a 0d 0a 75 73 65 72 2d 61 |ept: */*..user-a|
+|00000100| 67 65 6e 74 3a 20 41 48 43 2f 32 2e 31 0d 0a 0d |gent: AHC/2.1...|
+|00000110| 0a                                              |.               |
++--------+-------------------------------------------------+----------------+
+1417 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] FLUSH
+1418 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] ACTIVE
+1419 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] READ: 311B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 34 30 33 20 46 6f 72 |HTTP/1.1 403 For|
+|00000010| 62 69 64 64 65 6e 0d 0a 43 6f 6e 74 65 6e 74 2d |bidden..Content-|
+|00000020| 4c 65 6e 67 74 68 3a 32 34 31 0d 0a 43 6f 6e 74 |Length:241..Cont|
+|00000030| 65 6e 74 2d 54 79 70 65 3a 74 65 78 74 2f 68 74 |ent-Type:text/ht|
+|00000040| 6d 6c 0d 0a 0d 0a 52 65 6a 65 63 74 65 64 20 61 |ml....Rejected a|
+|00000050| 6e 20 69 6e 63 6f 6d 69 6e 67 20 57 65 62 53 6f |n incoming WebSo|
+|00000060| 63 6b 65 74 20 63 6f 6e 6e 65 63 74 69 6f 6e 20 |cket connection |
+|00000070| 66 72 6f 6d 20 74 68 65 20 68 74 74 70 3a 2f 2f |from the http://|
+|00000080| 6c 6f 63 61 6c 68 6f 73 74 3a 35 32 39 37 31 20 |localhost:52971 |
+|00000090| 6f 72 69 67 69 6e 2e 20 55 73 65 20 74 68 65 20 |origin. Use the |
+|000000a0| 63 6f 6d 6d 61 6e 64 20 6c 69 6e 65 20 66 6c 61 |command line fla|
+|000000b0| 67 20 2d 2d 72 65 6d 6f 74 65 2d 61 6c 6c 6f 77 |g --remote-allow|
+|000000c0| 2d 6f 72 69 67 69 6e 73 3d 68 74 74 70 3a 2f 2f |-origins=http://|
+|000000d0| 6c 6f 63 61 6c 68 6f 73 74 3a 35 32 39 37 31 20 |localhost:52971 |
+|000000e0| 74 6f 20 61 6c 6c 6f 77 20 63 6f 6e 6e 65 63 74 |to allow connect|
+|000000f0| 69 6f 6e 73 20 66 72 6f 6d 20 74 68 69 73 20 6f |ions from this o|
+|00000100| 72 69 67 69 6e 20 6f 72 20 2d 2d 72 65 6d 6f 74 |rigin or --remot|
+|00000110| 65 2d 61 6c 6c 6f 77 2d 6f 72 69 67 69 6e 73 3d |e-allow-origins=|
+|00000120| 2a 20 74 6f 20 61 6c 6c 6f 77 20 61 6c 6c 20 6f |* to allow all o|
+|00000130| 72 69 67 69 6e 73 2e                            |rigins.         |
++--------+-------------------------------------------------+----------------+
+1419 [AsyncHttpClient-1-4] DEBUG o.a.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/dc218b82-dc0c-4c68-9742-e4ef4060e57e HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: zlImCB2PPypToM1IWMc1ew==
+sec-websocket-version: 13
+origin: http://localhost:52971
+host: localhost:52971
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 403 Forbidden
+Content-Length: 241
+Content-Type: text/html
+
+1423 [AsyncHttpClient-1-4] DEBUG o.a.netty.channel.ChannelManager - Closing Channel [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] 
+1423 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 - R:localhost/127.0.0.1:52971] CLOSE
+1424 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 ! R:localhost/127.0.0.1:52971] READ COMPLETE
+1424 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 ! R:localhost/127.0.0.1:52971] INACTIVE
+1424 [AsyncHttpClient-1-4] DEBUG o.a.netty.handler.WebSocketHandler - Channel Closed: [id: 0xc24c601a, L:/127.0.0.1:52978 ! R:localhost/127.0.0.1:52971] with attribute DISCARD
+1424 [AsyncHttpClient-1-4] TRACE i.n.handler.logging.LoggingHandler - [id: 0xc24c601a, L:/127.0.0.1:52978 ! R:localhost/127.0.0.1:52971] UNREGISTERED
